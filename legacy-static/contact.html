@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact us — Redlace</title>
+  <meta name="description" content="Message, call or email Redlace about an order, a size or a return. We reply within one working day.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/img/cursor-shoe.png">
+</head>
+<body data-page="contact">
+  <div id="curtain" class="curtain"></div>
+  <div id="hdr"></div>
+
+  <main id="main" class="page">
+    <div class="wrap">
+      <div class="page-head">
+        <h1 class="d h-xl">Talk to us</h1>
+        <p>We reply within one working day.</p>
+      </div>
+
+      <div class="contact">
+        <form class="form" id="contactForm" novalidate>
+          <div class="form__row">
+            <label class="field" data-f="name"><span>Your name</span><input name="name" autocomplete="name"><small>Enter your name so we know who to reply to.</small></label>
+            <label class="field" data-f="email"><span>Email</span><input name="email" type="email" autocomplete="email"><small>Enter an email like you@example.com.</small></label>
+          </div>
+          <div class="form__row">
+            <label class="field"><span>What is it about?</span>
+              <select name="topic"><option>A size or a shoe</option><option>An order</option><option>A return</option><option>Something else</option></select>
+            </label>
+            <label class="field"><span>Order number, if you have one</span><input name="order" placeholder="RL-00000" autocomplete="off"></label>
+          </div>
+          <label class="field" data-f="message"><span>Message</span><textarea name="message" rows="6"></textarea><small>Tell us a little more, at least a sentence.</small></label>
+          <div><button class="btn btn--red" type="submit">Send message</button></div>
+        </form>
+
+        <div class="contact__ways">
+          <div><h3>Email</h3><a href="mailto:hello@redlace.example">hello@redlace.example</a></div>
+          <div><h3>Phone and WhatsApp</h3><p>+91 80 5550 0142<small>Monday to Saturday, 10am to 7pm</small></p></div>
+          <div><h3>Studio</h3><p>12th Main Road, Indiranagar<small>Bengaluru 560038. Try-ons by appointment.</small></p></div>
+        </div>
+      </div>
+
+      <section class="sec" id="faq" style="padding-bottom:0" aria-labelledby="faqH">
+        <div class="sec-head"><h2 class="d h-lg" id="faqH" data-reveal><span>Asked most often</span></h2></div>
+        <div class="acc" style="margin-top:0">
+          <details><summary>How long does delivery take?</summary><div class="acc__body"><p>Orders placed before 2pm ship the same day and arrive in 2 to 4 days. Express reaches metro cities the next day for ₹299.</p></div></details>
+          <details><summary>What does delivery cost?</summary><div class="acc__body"><p>Free on orders over ₹4,999. Below that, standard delivery is ₹149.</p></div></details>
+          <details><summary>Which size should I order?</summary><div class="acc__body"><p>All sizes on the site are UK. Take your usual size in most pairs. If you are between sizes or have wide feet, go half a size up, or message us with a shoe that fits you well and we will match it.</p></div></details>
+          <details><summary>Can I return a pair?</summary><div class="acc__body"><p>Yes, within 7 days of delivery, as long as the pair is unworn and in its original box. We arrange and pay for the pickup, and refund to your original payment method.</p></div></details>
+          <details><summary>How do I know the shoes are real?</summary><div class="acc__body"><p>Every pair is opened and inspected by hand before it ships: stitching, materials, box label and both shoes. If a pair fails, it never reaches the shelf.</p></div></details>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <div id="ftr"></div>
+
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

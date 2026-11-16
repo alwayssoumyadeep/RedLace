@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en" data-nav="red">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Redlace — Sneakers in red and white</title>
+  <meta name="description" content="Redlace sells a short list of sneakers in red and white, starting with the Nike Dunk Low University Red. Checked by hand, delivered in 2 to 4 days.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/img/cursor-shoe.png">
+</head>
+<body data-page="home" data-boot="manual">
+  <div id="curtain" class="curtain curtain--full"></div>
+  <div id="hdr"></div>
+
+  <main id="main">
+    <!-- One pinned scene. Scroll position drives the wipe to white and the turn of the shoe. -->
+    <section class="stage" id="stage" aria-label="Nike Dunk Low University Red">
+      <div class="stage__pin">
+        <div class="stage__glow"></div>
+        <div class="stage__white"></div>
+
+        <h1 class="stage__word d" aria-label="Nike Dunk Low University Red">
+          <span><i>University</i></span>
+          <span><i>Red</i></span>
+        </h1>
+
+        <div class="stage__shoe">
+          <div class="stage__shadow"></div>
+          <div class="stage__tilt" id="tilt">
+            <canvas id="turn" width="1120" height="600" role="img" aria-label="Nike Dunk Low in white and university red, turning as you scroll"></canvas>
+          </div>
+        </div>
+
+        <div class="stage__intro">
+          <p class="stage__name">Nike Dunk Low</p>
+          <p class="stage__desc">White leather, red overlays, red laces. In stock from UK 6 to 12.</p>
+          <div class="stage__buy">
+            <b>₹12,795</b>
+            <a class="btn btn--white" href="product.html?id=dunk-low-university-red">Shop the shoe</a>
+          </div>
+        </div>
+        <p class="stage__hint"><i></i>Scroll to turn it around</p>
+
+        <div class="stage__tour">
+          <div class="note note--l" data-from="0" data-to="62">
+            <h3>Leather, all of it</h3>
+            <p>A white leather base with red leather overlays stitched over the top.</p>
+          </div>
+          <div class="note note--r" data-from="76" data-to="150">
+            <h3>Holes that breathe</h3>
+            <p>A perforated toe box, and flat red laces up to a mesh tongue.</p>
+          </div>
+          <div class="note note--l" data-from="164" data-to="236">
+            <h3>Cut below the ankle</h3>
+            <p>A padded collar that sits low, the way the 1985 basketball pair did.</p>
+          </div>
+          <div class="note note--r" data-from="248" data-to="322">
+            <h3>Name on the heel</h3>
+            <p>NIKE embroidered in white across a red heel tab.</p>
+          </div>
+          <div class="note note--end" data-from="336" data-to="361">
+            <p>₹12,795, in UK 6 to 12</p>
+            <a class="btn btn--red" href="product.html?id=dunk-low-university-red">Choose your size</a>
+          </div>
+
+          <div class="stage__deg d" aria-hidden="true"><span id="deg">000</span><small>°</small></div>
+          <div class="stage__lace" aria-hidden="true">
+            <svg viewBox="0 0 320 44"><path class="t" d="M4 34 44 10 84 34 124 10 164 34 204 10 244 34 284 10 316 30"/><path class="f" id="laceFill" pathLength="100" d="M4 34 44 10 84 34 124 10 164 34 204 10 244 34 284 10 316 30"/></svg>
+            <p>One full turn</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" aria-labelledby="freshH">
+      <div class="wrap sec-head">
+        <h2 class="d h-lg" id="freshH" data-reveal><span>Fresh this week</span></h2>
+        <a class="link" href="shop.html?sort=new">See every new drop</a>
+      </div>
+      <div class="rail" id="rail" tabindex="0" aria-label="New sneakers, scroll sideways"></div>
+    </section>
+
+    <div class="band" aria-hidden="true">
+      <div class="band__track d" id="band">
+        <span>Checked by hand</span><span>Free delivery over ₹4,999</span><span>7-day returns</span><span>New drops every Friday</span>
+        <span>Checked by hand</span><span>Free delivery over ₹4,999</span><span>7-day returns</span><span>New drops every Friday</span>
+        <span>Checked by hand</span><span>Free delivery over ₹4,999</span><span>7-day returns</span><span>New drops every Friday</span>
+      </div>
+    </div>
+
+    <section class="sec" aria-labelledby="shapeH">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 class="d h-lg" id="shapeH" data-reveal><span>Pick a shape</span></h2>
+        </div>
+        <div class="tiles">
+          <a class="tile" href="shop.html?type=Low-top" data-cursor="Shop">
+            <img src="assets/shoes/jordan-1-low-gym-red/s03.webp" alt="Air Jordan 1 Low in gym red" loading="lazy">
+            <h3 class="d">Low-tops</h3>
+            <p><span data-type-count="Low-top"></span> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></p>
+          </a>
+          <a class="tile" href="shop.html?type=High-top" data-cursor="Shop">
+            <img src="assets/shoes/jordan-1-high-chicago/main.webp" alt="Air Jordan 1 High OG Chicago" loading="lazy">
+            <h3 class="d">High-tops</h3>
+            <p><span data-type-count="High-top"></span> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></p>
+          </a>
+          <a class="tile" href="shop.html?type=Runner" data-cursor="Shop">
+            <img src="assets/shoes/air-max-90-infrared/main.webp" alt="Nike Air Max 90 Infrared" loading="lazy">
+            <h3 class="d">Runners</h3>
+            <p><span data-type-count="Runner"></span> <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" style="padding-top:0" aria-labelledby="shortH">
+      <div class="wrap split">
+        <a class="split__media" href="shop.html" data-cursor="Shop all" aria-label="Shop all sneakers">
+          <img src="assets/hero/05.webp" alt="Nike Dunk Low University Red, three-quarter view" loading="lazy">
+        </a>
+        <div class="split__body">
+          <h2 class="d h-lg" id="shortH" data-reveal><span>Sixteen pairs.</span></h2>
+          <h2 class="d h-lg red" data-reveal aria-hidden="true"><span>No filler.</span></h2>
+          <p class="lede">We keep the list short on purpose: the reds and whites worth owning, and the black-and-white pairs that go with everything else in your wardrobe.</p>
+          <a class="btn btn--ink" href="shop.html">Shop all sneakers</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" style="padding-top:0" aria-label="How we sell">
+      <div class="wrap promise">
+        <div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 5.800v5.700c0 4.300 2.900 7.600 7 9.500 4.100-1.900 7-5.200 7-9.500V5.800L12 3Z"/><path d="m9 12 2.200 2.200L15.200 10"/></svg>
+          <h3>Checked by hand</h3>
+          <p>Every pair is opened and inspected in Bengaluru before it ships: stitching, box label, both shoes.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.500 6.500h11v10h-11zM13.500 10h4l3 3.200v3.300h-7"/><circle cx="7" cy="17.500" r="1.800"/><circle cx="17" cy="17.500" r="1.800"/></svg>
+          <h3>At your door in 2 to 4 days</h3>
+          <p>Free delivery on orders over ₹4,999. Track the box from our shelf to your door.</p>
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5 4 9l4 4"/><path d="M4 9h10a5.500 5.500 0 0 1 0 11H9"/></svg>
+          <h3>7 days to change your mind</h3>
+          <p>Wrong size or wrong feeling, send them back unworn within a week. We pay for the pickup.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="ftr"></div>
+
+  <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>
