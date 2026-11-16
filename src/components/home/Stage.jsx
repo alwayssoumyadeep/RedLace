@@ -73,6 +73,7 @@ export default function Stage({ images }) {
     const onMove = (e) => { mx = e.clientX / window.innerWidth - 0.5; my = e.clientY / window.innerHeight - 0.5; };
 
     const update = () => {
+      if (!stage.isConnected) return; // the page has gone: never touch the header again
       const r = stage.getBoundingClientRect();
       const p = clamp(-r.top / (r.height - window.innerHeight), 0, 1);
       pmx += (mx - pmx) * 0.08; pmy += (my - pmy) * 0.08;
@@ -116,6 +117,7 @@ export default function Stage({ images }) {
     return () => {
       cancelAnimationFrame(raf);
       window.removeEventListener('mousemove', onMove);
+      root.removeAttribute('data-nav');
     };
   }, [images]);
 

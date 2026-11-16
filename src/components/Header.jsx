@@ -43,6 +43,11 @@ export default function Header() {
   // a new page closes the menu and the search
   useEffect(() => { setMenuOpen(false); setSearchOpen(false); }, [pathname, search]);
 
+  // white-on-red belongs to the home hero only; every other page gets the normal dark bar
+  useEffect(() => {
+    if (pathname !== '/') document.documentElement.removeAttribute('data-nav');
+  }, [pathname]);
+
   useEffect(() => {
     const root = document.documentElement;
     root.classList.toggle('menu-open', menuOpen);
